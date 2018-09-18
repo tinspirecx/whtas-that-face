@@ -10,8 +10,12 @@
 <title>Display Webcam Stream</title>
   
 <style>
-
-#videoElement {
+  .container {
+   margin: 5%; 
+  }
+  
+  #videoElement {
+    display: flex;
     width: 100%;
     height: 80%;
     background-color: #666;
@@ -20,10 +24,8 @@
 </head>
   
 <body>
-
-    <video autoplay="true" id="videoElement">
-     
-    </video>
+<div classs = "container">
+    <video autoplay="true" id="videoElement"></video>
 </div>
 <script>
  var video = document.querySelector("#videoElement");
